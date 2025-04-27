@@ -4,6 +4,8 @@ title: "Mapping Child Labour - Global Development Indicators"
 author: "Deepanshi Sharma (DCU ID: A000014492)"
 date: "26 April 2025"
 format: html
+execute:
+  echo: false
 ---
 
 ## Introduction
