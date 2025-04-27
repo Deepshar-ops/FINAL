@@ -52,8 +52,8 @@ gender_labour_data <- tibble(
 ## Graph 1 - Bar Chart: Top 10 Countries by Child Labour Percentage
 This graph below shows the countries with the highest rates of child labour. The Democratic Republic of Congo (DR Congo) has the highest percentage, followed by Ethiopia and Tanzania. Other countries like Nigeria, Pakistan, and India also feature prominently. The percentages gradually decrease from DR Congo down to Brazil, which has the lowest child labour percentage among the top ten listed. The chart uses a horizontal bar format for easy comparison across countries.
 
-```{r}
-ggplot(child_labour_country, aes(x = reorder(country, child_labour_percent), y = child_labour_percent)) +
+```{r echo = FALSE}
+#ggplot(child_labour_country, aes(x = reorder(country, child_labour_percent), y = child_labour_percent)) +
   geom_col() +
   coord_flip() +
   labs(title = "Top 10 Countries by Child Labour Percentage", x = "Country", y = "Child Labour (%)")
