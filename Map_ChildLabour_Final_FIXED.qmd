@@ -20,17 +20,17 @@ library(ggplot2)
 library(maps)
 library(viridis)
 
-# Create sample data for Top 10 countries
+# Data for Top 10 countries
 child_labour_country <- tibble(
   country = c("India", "Nigeria", "Pakistan", "Bangladesh", "Ethiopia", "DR Congo", "Indonesia", "Tanzania", "Egypt", "Brazil"),
   child_labour_percent = c(11.5, 14.2, 12.8, 10.7, 18.3, 20.1, 8.5, 16.7, 7.9, 5.6)
 )
 
-# Create sample world data
+# World data
 world_data <- map_data("world")
 world_child_labour <- child_labour_country
 
-# Create sample time series data
+# Time series data
 time_series_data <- tibble(
   year = rep(2010:2020, times = 3),
   country = rep(c("India", "Nigeria", "Pakistan"), each = 11),
@@ -41,7 +41,7 @@ time_series_data <- tibble(
   )
 )
 
-# Create sample gender-based data
+# Gender-based data
 gender_labour_data <- tibble(
   sex = rep(c("Male", "Female"), each = 50),
   obs_value = c(runif(50, 8, 18), runif(50, 6, 15))
